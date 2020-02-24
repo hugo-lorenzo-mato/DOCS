@@ -862,7 +862,7 @@ Practice questions based on these concepts
 ##### 105. List all the configmaps in the cluster
 
 ```kubectl get cm```  
-     or
+     or  
 ```kubectl get configmap```  
 
 ##### 106. Create a configmap called myconfigmap with literal value appname=myapp
@@ -873,7 +873,7 @@ Practice questions based on these concepts
 
 // you will see under data  
 ```kubectl get cm -o yaml```  
-         or
+         or  
 ```kubectl describe cm```  
 
 ##### 108. delete the configmap myconfigmap we just created
@@ -1547,7 +1547,7 @@ status: {}
 // it clearly says ImagePullBackOff something wrong with image  
 ```kubectl edit pod not-running``` 
 // it will open vim editor  
-                     or
+                     or  
 ```kubectl set image pod/not-running not-running=nginx```  
 
 ##### 142. This following yaml creates 4 namespaces and 4 pods. One of the pod in one of the namespaces are not in the running state. Debug and fix it. https://gist.githubusercontent.com/bbachi/1f001f10337234d46806929d12245397/raw/84b7295fb077f15de979fec5b3f7a13fc69c6d83/problem-pod.yaml.
