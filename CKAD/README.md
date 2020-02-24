@@ -3,7 +3,7 @@
 
 ## CKAD questions URLs
     
-- [Personal Repository](./150-prep-questions.md)  
+- [Personal Compilation from Medium](./150-prep-questions.md)  
 - [CKAD-exercises](https://github.com/dgkanatsios/CKAD-exercises)
 - [Practical Challenge Series](https://codeburst.io/kubernetes-ckad-weekly-challenges-overview-and-tips-7282b36a2681)  
   
