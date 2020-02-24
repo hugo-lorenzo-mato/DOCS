@@ -898,7 +898,7 @@ cat config.txt
 ##### 111. Create an nginx pod and load environment values from the above configmap keyvalcfgmap and exec into the pod and verify the environment variables and delete the pod
 
 // first run this command to save the pod yml   
-```kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > nginx-pod.yml```
+```kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > nginx-pod.yml```  
 // edit the yml to below file and create  
 ```kubectl create -f nginx-pod.yml```  
 // verify  
