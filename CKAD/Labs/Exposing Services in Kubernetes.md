@@ -131,3 +131,14 @@ spec:
 status:
   loadBalancer: {}
 ```
+
+To check:  
+
+```bash
+cloud_user@ip-10-0-1-101:~$ kubectl get endpoints auth-svc
+NAME       ENDPOINTS                     AGE
+auth-svc   10.244.2.5:80,10.244.2.6:80   7m4s
+cloud_user@ip-10-0-1-101:~$ kubectl get endpoints data-svc
+NAME       ENDPOINTS                                   AGE
+data-svc   10.244.2.2:80,10.244.2.3:80,10.244.2.4:80   6m
+```
