@@ -14,10 +14,13 @@
 
 ## Kubernetes Cheat Sheet  
   
-- [linuxacademy](https://linuxacademy.com/site-content/uploads/2019/04/Kubernetes-Cheat-Sheet_07182019.pdf?x87162)
+- [Linuxacademy](https://linuxacademy.com/site-content/uploads/2019/04/Kubernetes-Cheat-Sheet_07182019.pdf?x87162)
   
 ## Vi Cheat Sheet  
   
 -  [Ryanstutorials](https://ryanstutorials.net/linuxtutorial/cheatsheetvi.php) 
 -  [MIT](http://web.mit.edu/merolish/Public/vi-ref.pdf)  
   
+## Kubernetes tutorials  
+
+- [Kubernetes tutorials compilation from Magalix](https://www.magalix.com/blog/the-best-kubernetes-tutorials)
