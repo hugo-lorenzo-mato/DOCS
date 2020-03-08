@@ -47,11 +47,11 @@ You should see a timestamp under LAST-SCHEDULE, indicating the job was executed.
     
 ```bash    
 kubectl get cronjobs --all-namespaces -w  
-NAMESPACE   NAME              SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE  
-default     cleanup-cronjob   */1 * * * *   False     0        47s             63s  
-default   cleanup-cronjob   */1 * * * *   False   1     5s    81s  
-default   cleanup-cronjob   */1 * * * *   False   0     15s   91s  
-default   cleanup-cronjob   */1 * * * *   False   1     5s    2m21s  
-default   cleanup-cronjob   */1 * * * *   False   0     15s   2m31s  
+NAMESPACE   NAME              SCHEDULE          SUSPEND   ACTIVE   LAST SCHEDULE   AGE  
+default   cleanup-cronjob   */1 * * * *   False   0        47s         63s  
+default   cleanup-cronjob   */1 * * * *   False   1         5s         81s  
+default   cleanup-cronjob   */1 * * * *   False   0        15s         91s  
+default   cleanup-cronjob   */1 * * * *   False   1         5s         2m21s  
+default   cleanup-cronjob   */1 * * * *   False   0         15s        2m31s  
 ```    
 You should see a timestamp under LAST-SCHEDULE, indicating the job was executed.  
