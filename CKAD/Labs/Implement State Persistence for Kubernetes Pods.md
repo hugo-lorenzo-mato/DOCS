@@ -6,22 +6,22 @@ Your company needs a small database server to support a new application. They ha
   
 You will need to do the following:  
   
-* Create a PersistentVolume:
-  ** The PersistentVolume should be named mysql-pv.
-  ** The volume needs a capacity of 1Gi.
-  ** Use a storageClassName of localdisk.
-  ** Use the accessMode ReadWriteOnce.
-  ** Store the data locally on the node using a hostPath volume at the location /mnt/data.
+* Create a PersistentVolume:  
+    * The PersistentVolume should be named mysql-pv.
+    * The volume needs a capacity of 1Gi.
+    * Use a storageClassName of localdisk.
+    * Use the accessMode ReadWriteOnce.
+    * Store the data locally on the node using a hostPath volume at the location /mnt/data.
 * Create a PersistentVolumeClaim:
-  ** The PersistentVolumeClaim should be named mysql-pv-claim.
-  ** Set a resource request on the claim for 500Mi of storage.
-  ** Use the same storageClassName and accessModes as the PersistentVolume so that this claim can bind to the PersistentVolume.
+    * The PersistentVolumeClaim should be named mysql-pv-claim.
+    * Set a resource request on the claim for 500Mi of storage.
+    * Use the same storageClassName and accessModes as the PersistentVolume so that this claim can bind to the PersistentVolume.
 * Create a MySQL Pod configured to use the PersistentVolumeClaim:
-  ** The Pod should be named mysql-pod.
-  ** Use the image mysql:5.6.
-  ** Expose the containerPort 3306.
-  ** Set an environment variable called MYSQL_ROOT_PASSWORD with the value password.
-  ** Add the PersistentVolumeClaim as a volume and mount it to the container at the path /var/lib/mysql.
+    * The Pod should be named mysql-pod.
+    * Use the image mysql:5.6.
+    * Expose the containerPort 3306.
+    * Set an environment variable called MYSQL_ROOT_PASSWORD with the value password.
+    * Add the PersistentVolumeClaim as a volume and mount it to the container at the path /var/lib/mysql.
     
 ### Execution    
   
@@ -113,9 +113,9 @@ Create the Pod:
 
 ```kubectl apply -f mysql-pod.yml```
 
-Check the status of the pod with kubectl get pod mysql-pod. After a few moments it should be in the RUNNING status.
+Check the status of the pod with ```kubectl get pod mysql-pod```. After a few moments it should be in the RUNNING status.
 
-You can also verify that the pod is interacting with the filesystem at /mnt/data on the node. Log in to the node from the Kube master like this, using the same as the password for the kube master:
+You can also verify that the pod is interacting with the filesystem at ```/mnt/data``` on the node. Log in to the node from the Kube master like this, using the same as the password for the kube master:
 
 ```ssh cloud_user@10.0.1.102```
 
